@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: raleway;
+    box-sizing: border-box;
 }
 
 a{
@@ -13,7 +14,33 @@ background-color: white;
 width: 100%;
 display: flex;
 align-items: center;
+justify-content: space-around;
+}
 
+header h2{
+color: #7a375e;
+}
+
+button{
+border-radius: 15px;
+height: 40px;
+background-color: #903e6e;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+button:hover{
+    background-color: #7a375e;
+    transition: 0.4s;
+}
+
+.phone{
+    display: flex;
+}
+
+.phone img{
+    width: 50px;
 }
 
 .menu{
@@ -23,6 +50,7 @@ align-items: center;
     background-color:#903e6e;
     margin-bottom: 40px;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .menu a{
@@ -115,6 +143,50 @@ font-weight: normal;
     height: min-content;
 }
 
+
+
+.primary{
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.text{
+    min-width: 300px;
+}
+
+.primary .block{
+    text-align: left;
+    min-height: 170px;
+    font-size: 1.5em;
+    justify-content: center;
+}
+
+#reverse{
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#reverse .text{
+    text-align: left;
+}
+
+#reverse .block{
+    background-image: url(img/icon.png);
+    background-size: cover;
+}
+
+.text{
+    width: 50%;
+    text-align: right;
+    min-width: 300px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #7a375e;
+    min-width: 300px;
+}
+
 .prof{
     display: flex;
     justify-content: space-evenly;
@@ -165,6 +237,7 @@ font-weight: normal;
     text-align: center;
     font-size: 1.4em;
     border: 4px solid #000000;
+    
     border-radius: 50%;
    justify-content: center;
    padding: 20px;
@@ -196,22 +269,54 @@ footer{
     justify-content: space-around;
 }
 
-footer img{
-max-width: 120px;
-min-width: 170px;
-margin-right: 20px;
-max-height: 110px;
+.imag img:first-child{
+    width: 110px;
+    height: 90px;
+}
+
+.imag img:nth-child(2){
+width: 220px;
+height: 50px;
+}
+
+footer div{
+    margin: 0 10px;
 }
 
 .info-foot{
 display: flex;
 flex-direction: column;
-height: 100%;
-align-items: stretch;
-justify-content: space-between;
+height: 200px;
+justify-content: space-evenly;
+}
+
+.info-foot a:hover{
+    text-decoration: underline;
+    color: rgb(145, 145, 255);
+    transition: 0.3S;
 }
 
 .imag{
     display: flex;
     flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacts img{
+    width: 30px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bot{
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
 }
